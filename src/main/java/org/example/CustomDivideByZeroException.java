@@ -1,5 +1,6 @@
 package org.example;
-
+import java.util.Scanner;
+import java.util.InputMismatchException;
 /**
  * Custom exception for dividing by zero.
  */
@@ -38,5 +39,7 @@ public class CustomDivideByZeroException extends  Exception {
     public CustomDivideByZeroException() {
         // TODO: Modify this constructor to accept and store the two values attempted to be divided
         super("Attempted to divide by zero");
+        this.a = a;
+        this.b = b;
     }
 }
